@@ -1,0 +1,313 @@
+/*
+Theme Name: John Gotschall Blank Theme
+Theme URI: URL for John Blank
+Author: John Gotschall
+Description: Blank theme for WIE course
+Version: 0.1
+License: Open
+Text Domain: john_gotschall_blank_template
+*/
+@import url("css/normalize.css");
+@import url("css/skeleton.css");
+
+/*--- Global Styles --- */
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "centurygothic";
+    font-size: 18px;
+    color: #5b5b5b;
+    background: white; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(white, #d3d3d3); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(white, #d3d3d3); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(white, #d3d3d3); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to white, #d3d3d3); /* Standard syntax */
+}
+
+.container {
+    background: white;
+}
+
+@font-face {
+    font-family: "centurygothic";
+    src: url("http://www.johnjg.com/wordpress/wp-content/themes/blank-template-johngotschall/fonts/centurygothic.ttf") format("truetype");
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: "centurygothic", sans-serif;
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+h2, h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+    border-bottom: 2px solid #3b8ced;
+    margin-bottom: 5px;
+    text-decoration: none;
+    font-family: "Oswald", sans-serif;
+    color: #004b91;
+}
+
+h4 {
+    margin-bottom: 15px;
+    font-size: 0.8em;
+    font-weight: bold;
+    font-family: "centurygothic", sans-serif;
+    color: #3b8ced;
+}
+
+h2 a, h3 a, h4 a {
+    text-decoration: none;
+    color: #004b91;
+}
+
+a {
+    color: #0000ff;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #3b8ced;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h5 a {
+    font-size: 1.0em;
+    font-weight: bold;
+    margin: 0 0 0 15px;
+    vertical-align: middle;
+    text-decoration: none;
+    font-family: "Oswald", sans-serif;
+    color: white;
+    text-transform: uppercase;
+}
+
+h5 a:hover {
+    color: #3b8ced;
+}
+
+/*--- Header styles --- */
+
+.topbar {
+    background: #004b91;
+}
+
+#stickyheader {
+    z-index: 99999999;
+}
+
+.thesearchtitle {
+    margin-bottom: 50px;
+ }
+
+.search-form {
+    float: right;
+    margin: 5px 15px -10px 0;
+}
+.gradient {
+    background: white; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient( #d3d3d3, white); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient( #d3d3d3, white); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#d3d3d3, white); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to #d3d3d3, white); /* Standard syntax */
+    height: 260px;
+    text-align: center;
+}
+
+/*--- Menu --- */
+
+.blank-menu-header {
+    margin: 0px auto;
+    padding: 0;
+    text-align: center;
+    background-color: #eaeaea;
+}
+.blank-menu-header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    line-height: normal;
+    padding-bottom: -20px;
+}
+.blank-menu-header a {
+    display: block;
+    line-height: 50px;
+    padding: 0 45px 0 45px;
+    margin: 0 -3px -10px -3px;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Oswald", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #004b91;
+    border-left: 2px solid #004b91;
+    border-right: 2px solid #004b91;
+    background-color: #eaeaea;
+}
+
+.blank-menu-header a:hover {
+    color: #eaeaea;
+    background-color: #004b91;
+}
+
+@media all and (min-width: 600px) {
+    nav li {
+        display: inline-block;
+    }
+}
+
+/*--- Conte Area styles --- */
+
+section {
+    margin: 20px 0 20px 0;
+}
+
+#readmorebutton {
+    margin-top: 10px;
+}
+#readmorebutton a {
+    width: 150px;
+    padding: 10px 15px 10px 15px;
+    line-height: 40px;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "centurygothic", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #3b8ced;
+    border-radius: 5px;
+}
+
+#readmorebutton a:hover {
+    background-color: #004b91;
+}
+
+.sidebarstyle {
+    padding: 20px;
+}
+
+.sidebarstyle ul {
+    margin: 15px 0 35px 20px;
+    list-style: none;
+}
+
+.sidebarstyle a {
+    font-size: 1em;
+    font-weight: bold;
+    font-family: "centurygothic", sans-serif;
+    color: #3b8ced;
+    text-decoration: none;
+}
+
+.sidebarstyle a:hover {
+    color: #004b91;
+}
+
+.pagestyle {
+    padding: 50px;
+}
+
+.posttitle {
+    margin-bottom: 15px;
+}
+
+.sectionsstyle {
+    padding: 0 20px 20px 20px;
+}
+
+.thumbnail {
+    float: left;
+    margin: 0 15px 0 0;
+    width: auto;
+
+}
+
+.post-thumbnail {
+    float: right;
+    margin: 0 0 15px 15px;
+    width: auto;
+}
+
+/*--- Footer styles --- */
+
+footer {
+    background: #004b91;
+}
+
+.footerwidget {
+    padding: 20px 20px 20px 20px;
+}
+
+.footerwidget h2 {
+    color: white;
+}
+
+.footerwidget ul {
+    margin: 15px 0 0 20px;
+    list-style: none;
+}
+
+.footerwidget a {
+    color: white;
+    text-decoration: none;
+}
+
+.footerwidget a:hover {
+    color: #3b8ced;
+    text-decoration: none;
+}
+
+.socialbar {
+    background: black;
+}
+
+.socialicons {
+    text-align: right;
+    padding: 10px 15px 0 0;
+}
+
+.copyright {
+    text-align: left;
+    font-size: 0.8em;
+    color: #3b8ced;
+    padding: 35px 0 0 15px;
+}
